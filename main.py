@@ -21,7 +21,7 @@ def update_blog(commit_message='Updated blog'):
 
 
 random_text_string = "bfhjdsifopafj"
-with open(PATH_TO_BLOG_REPO/'index.html', 'w') as file:
+with open(PATH_TO_BLOG/'index.html', 'w') as file:
     file.write(random_text_string)
 
 update_blog()
