@@ -58,7 +58,7 @@ def create_new_blog(title, content, cover_image):
     else:
         raise FileExistsError("File already exists, please check again your name! Aborting!")
 
-path_to_new_content = create_new_blog('Test_title', 'ghjk', 'logo.png')
+path_to_new_content = create_new_blog('Test_title', 'ghjk', 'content\\logo.png')
 
 # Index.html --> BLog post
 from bs4 import BeautifulSoup as Soup
