@@ -63,5 +63,5 @@ def create_new_blog(title, content, cover_image):
 # Index.html --> BLog post
 from bs4 import BeautifulSoup as Soup
 with open(PATH_TO_BLOG/'index.html') as index:
-    soup = Soup(index.read())
+    soup = Soup(index.read(), features='lxml')
 print(str(soup))
